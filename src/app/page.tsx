@@ -1,4 +1,5 @@
 import EnterAnimation from "@/components/EnterAnimation";
+import SlideAnimation from "@/components/SlideAnimation";
 import * as motion from "motion/react-client";
 
 export default function Home() {
@@ -10,6 +11,7 @@ export default function Home() {
         transition={{ duration: 1 }}
       />
       <EnterAnimation />
+      <SlideAnimation />
     </div>
   );
 }
