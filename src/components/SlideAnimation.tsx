@@ -29,6 +29,9 @@ export default function SlideAnimation(props: SlideAnimationProps) {
         <div className="w-full h-full flex items-center justify-center p-4">
             <div className="w-[40dvw] overflow-hidden relative h-[40svh] bg-gray-200 rounded-lg shadow-md group">
                 {/* Slides Container */}
+                <div className="absolute text-white font-bold top-3 right-3 text-sm z-10">
+                    {currentSlide + 1} / {slides.length}
+                </div>
                 <div
                     className="flex transition-transform duration-500 ease-in-out"
                     style={{ transform: `translateX(-${currentSlide * 100}%)` }}
@@ -36,12 +39,9 @@ export default function SlideAnimation(props: SlideAnimationProps) {
                     {slides.map((image, index) => (
                         <div
                             key={index}
-                            className={`w-full h-[40svh] flex-shrink-0 relative rounded-lg flex items-center justify-center text-white text-4xl`}
+                            className={`w-full h-[40svh] flex-shrink-0 rounded-lg flex items-center justify-center text-white text-4xl`}
                         >
                             <Image src={image} alt={""} />
-                            <div className="absolute text-white font-bold top-3 right-3 text-sm">
-                                {currentSlide + 1} / {slides.length}
-                            </div>
                         </div>
                     ))}
                 </div>
