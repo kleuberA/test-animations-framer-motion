@@ -19,6 +19,12 @@ export default function Home() {
         className='w-60 h-60 bg-yellow-500 rounded-lg'>
       </motion.div>
       <motion.button whileTap={{ scale: 0.9, rotate: 3 }} className="bg-red-500 w-20 h-10" />
+      <motion.div
+        whileHover={{ scale: 1.2, rotate: 10 }}
+        className="bg-blue-500 w-20 h-10"
+      >
+
+      </motion.div>
     </div>
   );
 }
