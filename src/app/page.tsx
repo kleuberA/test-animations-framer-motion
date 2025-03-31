@@ -1,4 +1,5 @@
 import EnterAnimation from "@/components/EnterAnimation";
+import ScrollAnimation from "@/components/ScrollAnimation";
 import SlideAnimation from "@/components/SlideAnimation";
 import * as motion from "motion/react-client";
 
@@ -25,6 +26,7 @@ export default function Home() {
       >
 
       </motion.div>
+      <ScrollAnimation />
     </div>
   );
 }
