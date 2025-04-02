@@ -26,7 +26,17 @@ export default function Home() {
       >
 
       </motion.div> */}
-      <ScrollAnimation />
+      {/* <ScrollAnimation /> */}
+
+      <motion.div
+        className="w-32 h-32 bg-red-500 rounded-lg"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        whileTap={{ scale: 0.9, rotate: 3 }}
+      >
+
+      </motion.div>
+
     </div>
   );
 }
