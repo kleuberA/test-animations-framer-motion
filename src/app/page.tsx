@@ -6,7 +6,7 @@ import * as motion from "motion/react-client";
 export default function Home() {
   return (
     <div className="flex flex-row flex-wrap w-full p-4 min-h-svh gap-5">
-      {/* <motion.div
+      <motion.div
         style={box}
         animate={{ rotate: 360 }}
         transition={{ duration: 1 }}
@@ -25,8 +25,8 @@ export default function Home() {
         className="bg-blue-500 w-20 h-10"
       >
 
-      </motion.div> */}
-      {/* <ScrollAnimation /> */}
+      </motion.div>
+      <ScrollAnimation />
 
       <motion.div
         className="w-32 h-32 bg-red-500 rounded-lg"
