@@ -1,4 +1,5 @@
 import EnterAnimation from "@/components/EnterAnimation";
+import { ThreeDMarqueeComponent } from "@/components/MarqueeComponent";
 import ScrollAnimation from "@/components/ScrollAnimation";
 import SlideAnimation from "@/components/SlideAnimation";
 import * as motion from "motion/react-client";
@@ -34,9 +35,8 @@ export default function Home() {
         animate={{ opacity: 1 }}
         whileTap={{ scale: 0.9, rotate: 3 }}
       >
-
       </motion.div>
-
+      <ThreeDMarqueeComponent />
     </div>
   );
 }
