@@ -1,4 +1,5 @@
 import EnterAnimation from "@/components/EnterAnimation";
+import { GlowingEffectComponent } from "@/components/GlowingEffectCompornent";
 import { ThreeDMarqueeComponent } from "@/components/MarqueeComponent";
 import ScrollAnimation from "@/components/ScrollAnimation";
 import SlideAnimation from "@/components/SlideAnimation";
@@ -37,6 +38,7 @@ export default function Home() {
       >
       </motion.div>
       <ThreeDMarqueeComponent />
+      <GlowingEffectComponent />
     </div>
   );
 }
