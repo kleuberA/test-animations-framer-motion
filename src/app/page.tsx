@@ -1,8 +1,8 @@
-import EnterAnimation from "@/components/EnterAnimation";
 import { GlowingEffectComponent } from "@/components/GlowingEffectCompornent";
+import { MovingBorderComponent } from "@/components/MovingBorderComponent";
 import { ThreeDMarqueeComponent } from "@/components/MarqueeComponent";
+import EnterAnimation from "@/components/EnterAnimation";
 import ScrollAnimation from "@/components/ScrollAnimation";
-import SlideAnimation from "@/components/SlideAnimation";
 import * as motion from "motion/react-client";
 
 export default function Home() {
@@ -14,7 +14,7 @@ export default function Home() {
         transition={{ duration: 1 }}
       />
       <EnterAnimation />
-      <SlideAnimation />
+      {/* <SlideAnimation /> */}
       <motion.div
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: [0, 1, 1], y: [-50, 0, 0, 50] }}
@@ -29,16 +29,16 @@ export default function Home() {
 
       </motion.div>
       <ScrollAnimation />
-
-      <motion.div
+      {/* <motion.div
         className="w-32 h-32 bg-red-500 rounded-lg"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         whileTap={{ scale: 0.9, rotate: 3 }}
       >
-      </motion.div>
+      </motion.div> */}
       <ThreeDMarqueeComponent />
       <GlowingEffectComponent />
+      <MovingBorderComponent />
     </div>
   );
 }
